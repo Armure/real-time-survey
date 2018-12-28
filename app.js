@@ -30,7 +30,7 @@ const setLength = (socket, length) => {
 
 const handleConnect = ({ id }) => {
   console.log(`New client connected with id: ${id}`)
-  state.clients.push({ id, selection: null })
+  state.clients.push({ id, selection: null, name: null, avatar: null })
   onChange()
 }
 
